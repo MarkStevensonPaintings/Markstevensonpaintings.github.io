@@ -94,3 +94,12 @@
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 }
+
+@media screen and (max-width: 400px) {
+	.image-hide {
+		display: none;
+		height: 350px;
+		width: 300px;
+		margin: auto;
+	}
+}
