@@ -1,9 +1,6 @@
 .navbar-brand {
 	font-size: 25px;
 }
-.facebook-icon:hover {
-	opacity: 0.8;
-}
 .image-hide {
 	display: none;
 	height: 500px;
@@ -94,6 +91,9 @@
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 }
+
+
+
 
 @media screen and (max-width: 400px) {
 	.image-hide {
