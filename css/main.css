@@ -1,11 +1,5 @@
 .navbar-brand {
-	font-size: 25px;
-}
-.image-hide {
-	display: none;
-	height: 500px;
-	width: 400px;
-	margin: auto;
+	font-size: 25px
 }
 #image1 {
 	background: url(/img/paintings/image1.jpg) no-repeat;
