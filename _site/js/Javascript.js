@@ -54,6 +54,7 @@ function changeImage(event) {
 
 
 	if (targetElement.tagName == "IMG" && targetElement.className !== "arrow-left" && targetElement.className !== "arrow-right") {
+		$('.container-hide').show(200);
 		mainImage.src = targetElement.getAttribute("src");
 
 	

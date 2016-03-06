@@ -1,6 +1,9 @@
 .navbar-brand {
 	font-size: 25px
 }
+.container-hide {
+	display: none;
+}
 #image1 {
 	background: url(/img/paintings/image1.jpg) no-repeat;
 	background-position: center;

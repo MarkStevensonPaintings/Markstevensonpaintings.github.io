@@ -61,14 +61,6 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/artist_profile/">Artist Profile</a></li>
         <li><a href="/gallery/">Gallery</a></li>
-        <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/portraits/">Portraits and Life</a></li>
-                <li><a href="/still_life/">Still Life</a></li>
-                <li><a href="/plain_air/">Plain Air</a></li>
-              </ul>
-            </li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -81,24 +73,26 @@
       <div class="wrapper">
         <div class="container" onclick="changeImage(event)">
 	<h1>Portraits</h1>
-	<div class="row">
-		<div class="col-md-1">
-		  	<img class="arrow-left" src="/img/Icons/arrow-left.jpg" style="width: 50px; height: 50px; margin-top: 300px; cursor: pointer;">
-		  </div>
-	  	<div class="col-md-10">
-	    	<div class="thumbnail" style="border: none;">
-	    	  	<img  height="600" width="500" src="/img/paintings/image1.jpg" id="mainImage">
+	<div class="container-hide">
+		<div class="row">
+			<div class="col-md-1">
+			  	<img class="arrow-left" src="/img/Icons/arrow-left.jpg" style="width: 50px; height: 50px; margin-top: 300px; cursor: pointer;">
+			  </div>
+		  	<div class="col-md-10">
+		    	<div class="thumbnail" style="border: none;">
+		    	  	<img  height="600" width="500" src="/img/paintings/image1.jpg" id="mainImage">
 
-	     		 <div class="caption">
-			            <h3 id="painting-name">Painting1</h3>
-			        	<p>dd/mm/yyyy</p>
-			        	<p id="painting-info">Here goes some information about the painting</p>
-	      		</div>
-	   	 	</div>
-	  	</div>
-	 	 <div class="col-md-1">
-	  		<img class="arrow-right" src="/img/Icons/arrow-right.jpg" style="width: 50px; height: 50px; margin-top: 300px; cursor: pointer;">
-	 	 </div>
+		     		 <div class="caption">
+				            <h3 id="painting-name">Painting1</h3>
+				        	<p>dd/mm/yyyy</p>
+				        	<p id="painting-info">Here goes some information about the painting</p>
+		      		</div>
+		   	 	</div>
+		  	</div>
+		 	 <div class="col-md-1">
+		  		<img class="arrow-right" src="/img/Icons/arrow-right.jpg" style="width: 50px; height: 50px; margin-top: 300px; cursor: pointer;">
+		 	 </div>
+		</div>
 	</div>
 
 
