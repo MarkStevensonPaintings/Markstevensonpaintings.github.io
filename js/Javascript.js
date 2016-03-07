@@ -49,12 +49,21 @@ function changeImage(event) {
 	var text2 = "Painting2";
 	var text3 = "Painting3";
 	var text4 = "Painting4";
+	var text5 = "Painting5";
+	var text6 = "Painting6";
+	var text7 = "Painting7";
+	var text8 = "Painting8";
+	var text9 = "Painting9";
+	var text10 = "Painting10";
+	var text11 = "Painting11";
+	var text12 = "Painting12";
 
 
 
-
-	if (targetElement.tagName == "IMG" && targetElement.className !== "arrow-left" && targetElement.className !== "arrow-right") {
-		$('.container-hide').show(200);
+	if (targetElement.tagName == "IMG" && targetElement.className !== "arrow-left" && targetElement.className !== "arrow-right" && targetElement.className !== "cross") {
+		$('.footer-hide').hide();
+		$('.container-hide').show(500);
+		$('.container-hide2').hide();
 		mainImage.src = targetElement.getAttribute("src");
 
 	
@@ -100,7 +109,7 @@ function changeImage(event) {
 
 
 	else if (targetElement.className == "arrow-right") {
-		if (step > 12) {
+		if (step >= 12) {
 			step--
 		}
 		
@@ -110,12 +119,16 @@ function changeImage(event) {
 
 	}
 	else if (targetElement.className == "arrow-left") {
-		if (step < 1) {
+		if (step <= 1) {
 			step++
 		}
 
 		step--
 		mainImage.src = eval("image" + step);
 		paintingName.innerHTML = eval("text" + step);
+	}
+	else if (targetElement.className == "cross") {
+		$('.container-hide').hide();
+		$('.container-hide2').show(500);
 	}
 }

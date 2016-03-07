@@ -4,6 +4,39 @@
 .container-hide {
 	display: none;
 }
+.fixed {
+	position: fixed;
+	z-index: -1;
+	top: 20px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.thumbnail {
+	background-color: transparent;
+}
+.arrow-left {
+	width: 30px;
+	height: 30px; 
+	margin-top: 300px; 
+	cursor: pointer;
+}
+.arrow-right {
+	width: 30px;
+	height: 30px; 
+	margin-top: 300px; 
+	cursor: pointer;
+}
+.cross {
+	width: 20px; 
+	height: 20px; 
+	float: right; 
+	cursor: pointer
+}
+.footer-text {
+	color: white; 
+	font-size: 15px;
+}
 #image1 {
 	background: url(/img/paintings/image1.jpg) no-repeat;
 	background-position: center;
@@ -93,13 +126,24 @@
 
 
 @media screen and (max-width: 400px) {
-	.image-hide {
-		display: none;
-		height: 350px;
-		width: 300px;
-		margin: auto;
-	}
 	.navbar-brand {
 		font-size: 20px;
+	}
+	.arrow-left {
+		width: 20px;
+		margin-top: 140px;
+		height: 20px;
+	}
+	.arrow-right {
+		width: 20px;
+		height: 20px;
+		margin-top: 140px;
+	}
+	.cross {
+		width: 15px; 
+		height: 15px; 
+	}
+	.footer-text {
+		font-size: 12px;
 	}
 }
