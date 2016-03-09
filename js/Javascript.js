@@ -62,7 +62,7 @@ function changeImage(event) {
 
 	if (targetElement.tagName == "IMG" && targetElement.className !== "arrow-left" && targetElement.className !== "arrow-right" && targetElement.className !== "cross") {
 		$('.footer-hide').hide();
-		$('.container-hide').show(500);
+		$('.container-hide').show(1000);
 		$('.container-hide2').hide();
 		mainImage.src = targetElement.getAttribute("src");
 
@@ -129,6 +129,6 @@ function changeImage(event) {
 	}
 	else if (targetElement.className == "cross") {
 		$('.container-hide').hide();
-		$('.container-hide2').show(500);
+		$('.container-hide2').show(1000);
 	}
 }

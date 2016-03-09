@@ -16,22 +16,31 @@
 	background-color: transparent;
 }
 .arrow-left {
-	width: 30px;
-	height: 30px; 
+	width: 40px;
+	height: 40px; 
 	margin-top: 300px; 
 	cursor: pointer;
 }
+.arrow-left:hover {
+	opacity: 0.5
+}
 .arrow-right {
-	width: 30px;
-	height: 30px; 
+	width: 40px;
+	height: 40px; 
 	margin-top: 300px; 
 	cursor: pointer;
+}
+.arrow-right:hover {
+	opacity: 0.5
 }
 .cross {
 	width: 20px; 
 	height: 20px; 
 	float: right; 
 	cursor: pointer
+}
+.cross:hover {
+	opacity: 0.5
 }
 .footer-text {
 	color: white; 
@@ -130,18 +139,18 @@
 		font-size: 20px;
 	}
 	.arrow-left {
-		width: 20px;
+		width: 25px;
 		margin-top: 140px;
 		height: 20px;
 	}
 	.arrow-right {
-		width: 20px;
+		width: 25px;
 		height: 20px;
 		margin-top: 140px;
 	}
 	.cross {
-		width: 15px; 
-		height: 15px; 
+		width: 20px; 
+		height: 20px; 
 	}
 	.footer-text {
 		font-size: 12px;
