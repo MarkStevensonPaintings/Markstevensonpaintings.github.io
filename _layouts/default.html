@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html>
+ <div onclick="changeImage(event)">  
+  <html>
 
-  {% include head.html %}
+    {% include head.html %}
 
-  <body>
-    
-    <header>
-      {% include header.html %}
-    </header>
-    
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <body>
+      
+      <header>
+        {% include header.html %}
+      </header>
+      
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
       </div>
-    </div>
 
-    <footer>
-      {% include footer.html %}
-    </footer>
-  </body>
+      <footer>
+        {% include footer.html %}
+      </footer>
+    </body>
 
-</html>
+  </html>
+</div>
