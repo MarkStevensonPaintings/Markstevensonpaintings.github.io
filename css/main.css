@@ -1,3 +1,8 @@
+#footer-hide {
+	width: 100%; 
+	background-color: #262626; 
+	margin-top: 405px;
+}
 .navbar-brand {
 	font-size: 25px
 }
@@ -20,7 +25,6 @@
 	width: 30px;
 	height: 30px; 
 	cursor: pointer;
-	background-color: white;
 }
 .arrow-left:hover {
 	opacity: 0.5
@@ -30,7 +34,6 @@
 	height: 30px; 
 	cursor: pointer;
 	float: right;
-	background-color: white;
 }
 .arrow-right:hover {
 	opacity: 0.5
@@ -124,20 +127,35 @@
 	-moz-background-size: cover;
 }
 
-
-
-
+@media screen and (max-height: 900px) {
+	.container-hide {
+	left: 37%;
+	right: 37%;
+	}
+}
+@media screen and (max-height: 770px) {
+	.container-hide {
+	left: 40%;
+	right: 40%;
+	}
+}
+@media screen and (max-height: 770px) {
+	.container-hide {
+	left: 40%;
+	right: 40%;
+	}
+}
 @media screen and (max-width: 400px) {
 	.navbar-brand {
 		font-size: 20px;
 	}
 	.arrow-left {
 		width: 25px;
-		height: 20px;
+		height: 25px;
 	}
 	.arrow-right {
 		width: 25px;
-		height: 20px;
+		height: 25px;
 	}
 	.footer-text {
 		font-size: 12px;
@@ -148,5 +166,8 @@
 	position: fixed;
 	left: 2%;
 	right: 2%;
-}
+	}
+	#footer-hide {
+		margin-top: 100px;
+	}
 }

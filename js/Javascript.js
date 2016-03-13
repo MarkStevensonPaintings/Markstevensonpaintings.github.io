@@ -64,6 +64,7 @@ function changeImage(event) {
 		document.getElementById("container2").style.opacity = "0.07";
 		document.getElementsByTagName("body")[0].style.backgroundColor = "#404040";
 		document.getElementById("mynavbar").style.opacity = "0.01";
+		document.getElementById("footer-hide").style.opacity = "0.01";
 
 	
 		//  Title for the painting
@@ -145,5 +146,6 @@ function changeImage(event) {
 		document.getElementById("container2").style.opacity = "1";
 		document.getElementsByTagName("body")[0].style.backgroundColor = "transparent";
 		document.getElementById("mynavbar").style.opacity = "1";
+		document.getElementById("footer-hide").style.opacity = "1";
 	}
 }
