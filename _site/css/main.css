@@ -9,9 +9,9 @@
 .container-hide {
 	display: none;
 	z-index: 3; 
-	position: fixed;
-	left: 30%;
-	right: 30%;
+	position: absolute;
+	left: 0;
+	right: 0;
 	top: 20px;
 	bottom: 0;
 }
@@ -126,25 +126,6 @@
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 }
-
-@media screen and (max-height: 900px) {
-	.container-hide {
-	left: 37%;
-	right: 37%;
-	}
-}
-@media screen and (max-height: 770px) {
-	.container-hide {
-	left: 40%;
-	right: 40%;
-	}
-}
-@media screen and (max-height: 770px) {
-	.container-hide {
-	left: 40%;
-	right: 40%;
-	}
-}
 @media screen and (max-width: 400px) {
 	.navbar-brand {
 		font-size: 20px;
@@ -159,13 +140,6 @@
 	}
 	.footer-text {
 		font-size: 12px;
-	}
-	.container-hide {
-	display: none;
-	z-index: 3; 
-	position: fixed;
-	left: 2%;
-	right: 2%;
 	}
 	#footer-hide {
 		margin-top: 100px;
