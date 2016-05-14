@@ -70,13 +70,16 @@ function changeImage(event) {
 
 
 	//  Checks what is being clicked on
-	if (targetElement.tagName == "IMG" && targetElement.className !== "arrow-left" && targetElement.className !== "arrow-right") {
+	if (targetElement.tagName == "IMG" && targetElement.className !== "arrow-left" && targetElement.className !== "arrow-right" && currentSrc.includes("P")) {
+		document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 		$('.container-hide').show(300);
 		mainImage.src = targetElement.getAttribute("src");
-		document.getElementById("container2").style.opacity = "0.07";
+		document.getElementById("container2").style.opacity = "0.02";
 		document.getElementsByTagName("body")[0].style.backgroundColor = "#404040";
 		document.getElementById("mynavbar").style.opacity = "0.01";
 		document.getElementById("footer-hide").style.opacity = "0.01";
+		mainImage.height = 700
+		mainImage.width = 600
 
 	
 		//  Title for the painting
@@ -128,14 +131,6 @@ function changeImage(event) {
 			paintingName.innerHTML = "Painting12"
 			step = 12
 		}
-		else if (currentSrc == "/img/paintings/image27L.png") {
-			paintingName.innerHTML = "Painting13"
-			step = 13
-		}
-		else if (currentSrc == "/img/paintings/image28L.png") {
-			paintingName.innerHTML = "Painting14"
-			step = 14
-		}
 
 		if (currentSrc.includes("L")) {
 			mainImage.height = 1080
@@ -147,6 +142,31 @@ function changeImage(event) {
 		}
 	}
 
+	else if (targetElement.tagName == "IMG" && currentSrc.includes("L")) {
+		document.getElementById("container-size").className = "col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
+		$('.container-hide').show(300);
+		mainImage.src = targetElement.getAttribute("src");
+		document.getElementById("container2").style.opacity = "0.02";
+		document.getElementsByTagName("body")[0].style.backgroundColor = "#404040";
+		document.getElementById("mynavbar").style.opacity = "0.01";
+		document.getElementById("footer-hide").style.opacity = "0.01";
+		mainImage.height = 1080
+		mainImage.width = 1920
+
+		if (currentSrc == "/img/paintings/image27L.png") {
+			paintingName.innerHTML = "Painting13"
+			step = 13
+		}
+		else if (currentSrc == "/img/paintings/image28L.png") {
+			paintingName.innerHTML = "Painting14"
+			step = 14
+		}
+
+
+
+
+	}
+
 	// Changes the to the next image
 	else if (targetElement.className == "arrow-right") {
 		if (step >= 14) {
@@ -155,10 +175,12 @@ function changeImage(event) {
 		step++
 
 		if (step == 13 || step == 14) {
+			document.getElementById("container-size").className = "col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 1080
 			mainImage.width = 1920
 		}
 		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5 || step == 6 || step == 7 || step == 8 || step == 9|| step == 10|| step == 11 || step == 12) {
+			document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 700
 			mainImage.width = 600
 		}
@@ -175,10 +197,12 @@ function changeImage(event) {
 		step--
 
 		if (step == 13 || step == 14) {
+			document.getElementById("container-size").className = "col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 1080
 			mainImage.width = 1920
 		}
 		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5 || step == 6 || step == 7 || step == 8 || step == 9|| step == 10|| step == 11 || step == 12) {
+			document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 700
 			mainImage.width = 600
 		}
@@ -236,13 +260,17 @@ function changeImage2(event) {
 	var text7 = "Painting7";
 
 	//  Checks what is being clicked on
-	if (targetElement.tagName == "IMG" && targetElement.className !== "arrow-left" && targetElement.className !== "arrow-right") {
+	if (targetElement.tagName == "IMG" && targetElement.className !== "arrow-left" && targetElement.className !== "arrow-right" && currentSrc.includes("P")) {
+		document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 		$('.container-hide').show(300);
 		mainImage.src = targetElement.getAttribute("src");
-		document.getElementById("container2").style.opacity = "0.07";
+		document.getElementById("container2").style.opacity = "0.02";
 		document.getElementsByTagName("body")[0].style.backgroundColor = "#404040";
 		document.getElementById("mynavbar").style.opacity = "0.01";
 		document.getElementById("footer-hide").style.opacity = "0.01";
+		mainImage.height = 700
+		mainImage.width = 600
+
 
 	
 		//  Title for the painting
@@ -266,7 +294,20 @@ function changeImage2(event) {
 			paintingName.innerHTML = "Painting5"
 			step = 5
 		}
-		else if (currentSrc == "/img/paintings/image25L.png") {
+	}
+
+	else if (targetElement.tagName == "IMG" && currentSrc.includes("L")) {
+		document.getElementById("container-size").className = "col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
+		$('.container-hide').show(300);
+		mainImage.src = targetElement.getAttribute("src");
+		document.getElementById("container2").style.opacity = "0.02";
+		document.getElementsByTagName("body")[0].style.backgroundColor = "#404040";
+		document.getElementById("mynavbar").style.opacity = "0.01";
+		document.getElementById("footer-hide").style.opacity = "0.01";
+		mainImage.height = 1080
+		mainImage.width = 1920
+
+		if (currentSrc == "/img/paintings/image25L.png") {
 			paintingName.innerHTML = "Painting6"
 			step = 6
 		}
@@ -274,17 +315,8 @@ function changeImage2(event) {
 			paintingName.innerHTML = "Painting7"
 			step = 7
 		}
-
-		if (currentSrc.includes("L")) {
-			mainImage.height = 1080
-			mainImage.width = 1920
-		}
-		else if (currentSrc.includes("P")) {
-			mainImage.height = 700
-			mainImage.width = 600
-		}
 	}
-
+	
 	// Changes the to the next image
 	else if (targetElement.className == "arrow-right") {
 		if (step >= 7) {
@@ -293,10 +325,12 @@ function changeImage2(event) {
 		step++
 
 		if (step == 6 || step == 7) {
+			document.getElementById("container-size").className = "col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 1080
 			mainImage.width = 1920
 		}
 		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5) {
+			document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 700
 			mainImage.width = 600
 		}
@@ -314,10 +348,12 @@ function changeImage2(event) {
 		step--
 
 		if (step == 6 || step == 7) {
+			document.getElementById("container-size").className = "col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 1080
 			mainImage.width = 1920
 		}
 		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5) {
+			document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 700
 			mainImage.width = 600
 		}
@@ -378,7 +414,7 @@ function changeImage3(event) {
 	if (targetElement.tagName == "IMG" && targetElement.className !== "arrow-left" && targetElement.className !== "arrow-right") {
 		$('.container-hide').show(300);
 		mainImage.src = targetElement.getAttribute("src");
-		document.getElementById("container2").style.opacity = "0.07";
+		document.getElementById("container2").style.opacity = "0.02";
 		document.getElementsByTagName("body")[0].style.backgroundColor = "#404040";
 		document.getElementById("mynavbar").style.opacity = "0.01";
 		document.getElementById("footer-hide").style.opacity = "0.01";
