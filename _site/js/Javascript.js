@@ -411,13 +411,16 @@ function changeImage3(event) {
 	var text7 = "Painting7";
 
 	//  Checks what is being clicked on
-	if (targetElement.tagName == "IMG" && targetElement.className !== "arrow-left" && targetElement.className !== "arrow-right") {
+	if (targetElement.tagName == "IMG" && targetElement.className !== "arrow-left" && targetElement.className !== "arrow-right" && currentSrc.includes("P")) {
+		document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 		$('.container-hide').show(300);
 		mainImage.src = targetElement.getAttribute("src");
 		document.getElementById("container2").style.opacity = "0.02";
 		document.getElementsByTagName("body")[0].style.backgroundColor = "#404040";
 		document.getElementById("mynavbar").style.opacity = "0.01";
 		document.getElementById("footer-hide").style.opacity = "0.01";
+		mainImage.height = 700
+		mainImage.width = 600
 
 	
 		//  Title for the painting
@@ -433,7 +436,29 @@ function changeImage3(event) {
 			paintingName.innerHTML = "Painting3"
 			step = 3
 		}
-		else if (currentSrc == "/img/paintings/image21L.png") {
+
+		if (currentSrc.includes("L")) {
+			mainImage.height = 1080
+			mainImage.width = 1920
+		}
+		else if (currentSrc.includes("P")) {
+			mainImage.height = 700
+			mainImage.width = 600
+		}
+	}
+
+	else if (targetElement.tagName == "IMG" && currentSrc.includes("L")) {
+		document.getElementById("container-size").className = "col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
+		$('.container-hide').show(300);
+		mainImage.src = targetElement.getAttribute("src");
+		document.getElementById("container2").style.opacity = "0.02";
+		document.getElementsByTagName("body")[0].style.backgroundColor = "#404040";
+		document.getElementById("mynavbar").style.opacity = "0.01";
+		document.getElementById("footer-hide").style.opacity = "0.01";
+		mainImage.height = 1080
+		mainImage.width = 1920
+
+		if (currentSrc == "/img/paintings/image21L.png") {
 			paintingName.innerHTML = "Painting4"
 			step = 4
 		}
@@ -449,17 +474,7 @@ function changeImage3(event) {
 			paintingName.innerHTML = "Painting7"
 			step = 7
 		}
-
-		if (currentSrc.includes("L")) {
-			mainImage.height = 1080
-			mainImage.width = 1920
-		}
-		else if (currentSrc.includes("P")) {
-			mainImage.height = 700
-			mainImage.width = 600
-		}
 	}
-
 	// Changes the to the next image
 	else if (targetElement.className == "arrow-right") {
 		if (step >= 7) {
@@ -468,10 +483,12 @@ function changeImage3(event) {
 		step++
 
 		if (step == 4 || step == 5 || step == 6 || step == 7) {
+			document.getElementById("container-size").className = "col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 1080
 			mainImage.width = 1920
 		}
 		if (step == 1 || step == 2 || step == 3) {
+			document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 700
 			mainImage.width = 600
 		}
@@ -489,10 +506,12 @@ function changeImage3(event) {
 		step--
 
 		if (step == 4 || step == 5 || step == 6 || step == 7) {
+			document.getElementById("container-size").className = "col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 1080
 			mainImage.width = 1920
 		}
 		if (step == 1 || step == 2 || step == 3) {
+			document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 700
 			mainImage.width = 600
 		}
