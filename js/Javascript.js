@@ -5,6 +5,7 @@ function changeImage(event) {
 	event = event || window.event;
 	var targetElement = event.target || event.srcElement;
 	var paintingName = document.getElementById("painting-name");
+	var paintingInfo = document.getElementById("painting-info");
 	var currentSrc = targetElement.getAttribute("src");
 	var mainImage = document.getElementById("mainImage");
 	
@@ -53,20 +54,36 @@ function changeImage(event) {
 
 
 
-	var text1 = "Painting1";
-	var text2 = "Painting2";
-	var text3 = "Painting3";
-	var text4 = "Painting4";
-	var text5 = "Painting5";
-	var text6 = "Painting6";
-	var text7 = "Painting7";
-	var text8 = "Painting8";
-	var text9 = "Painting9";
-	var text10 = "Painting10";
-	var text11 = "Painting11";
-	var text12 = "Painting12";
-	var text13 = "Painting13";
-	var text14 = "Painting14";
+	var Name1 = "Narcissa with a hat";
+	var Name2 = "Teresa";
+	var Name3 = "Gudrun";
+	var Name4 = "Lucy";
+	var Name5 = "Two Nudes";
+	var Name6 = "Gosia";
+	var Name7 = "Jenny";
+	var Name8 = "Portrait of a Woman";
+	var Name9 = "Micky";
+	var Name10 = "Artist’s Mother";
+	var Name11 = "Rosalind Gilmore";
+	var Name12 = "Self Portrait";
+	var Name13 = "Ivor";
+	var Name14 = "Marta";
+
+	var Info1 = "Oil on Canvas 45x35cm";
+	var Info2 = "Oil on Canvas 30x25cm";
+	var Info3 = "Oil on Canvas 50x40cm";
+	var Info4 = "Oil on Canvas 90x70cm";
+	var Info5 = "Oil on Canvas 70x70cm";
+	var Info6 = "Oil on Board 30x26cm";
+	var Info7 = "Oil on Board 30x26";
+	var Info8 = "Oil on Canvas 30x25cm";
+	var Info9 = "Oil on Canvas 50x40cm";
+	var Info10 = "Oil on Board 22x17cm";
+	var Info11 = "Oil on Canvas 45x35cm";
+	var Info12 = "Oil on Board 20x20cm";
+	var Info13 = "Oil on Canvas 40x60cm";
+	var Info14 = "Oil on Canvas 30x25cm";
+
 
 
 	//  Checks what is being clicked on
@@ -84,51 +101,62 @@ function changeImage(event) {
 	
 		//  Title for the painting
 		if (currentSrc == "/img/paintings/image1P.png") {
-			paintingName.innerHTML = "Painting1";
+			paintingName.innerHTML = Name1
+			paintingInfo.innerHTML = Info1
 			step = 1
 		}
 		else if (currentSrc == "/img/paintings/image2P.png") {
-			paintingName.innerHTML = "Painting2"
+			paintingName.innerHTML = Name2
+			paintingInfo.innerHTML = Info2
 			step = 2
 		}
 		else if (currentSrc == "/img/paintings/image3P.png") {
-			paintingName.innerHTML = "Painting3"
+			paintingName.innerHTML = Name3
+			paintingInfo.innerHTML = Info3
 			step = 3
 		}
 		else if (currentSrc == "/img/paintings/image4P.png") {
-			paintingName.innerHTML = "Painting4"
+			paintingName.innerHTML = Name4
+			paintingInfo.innerHTML = Info4
 			step = 4
 		}
 		else if (currentSrc == "/img/paintings/image5P.png") {
-			paintingName.innerHTML = "Painting5"
+			paintingName.innerHTML = Name5
+			paintingInfo.innerHTML = Info5
 			step = 5
 		}
 		else if (currentSrc == "/img/paintings/image6P.png") {
-			paintingName.innerHTML = "Painting6"
+			paintingName.innerHTML = Name6
+			paintingInfo.innerHTML = Info6
 			step = 6
 		}
 		else if (currentSrc == "/img/paintings/image7P.png") {
-			paintingName.innerHTML = "Painting7"
+			paintingName.innerHTML = Name7
+			paintingInfo.innerHTML = Info7
 			step = 7
 		}
 		else if (currentSrc == "/img/paintings/image8P.png") {
-			paintingName.innerHTML = "Painting8"
+			paintingName.innerHTML = Name8
+			paintingInfo.innerHTML = Info8
 			step = 8
 		}
 		else if (currentSrc == "/img/paintings/image9P.png") {
-			paintingName.innerHTML = "Painting9"
+			paintingName.innerHTML = Name9
+			paintingInfo.innerHTML = Info9
 			step = 9
 		}
 		else if (currentSrc == "/img/paintings/image10P.png") {
-			paintingName.innerHTML = "Painting10"
+			paintingName.innerHTML = Name10
+			paintingInfo.innerHTML = Info10
 			step = 10
 		}
 		else if (currentSrc == "/img/paintings/image11P.png") {
-			paintingName.innerHTML = "Painting11"
+			paintingName.innerHTML = Name11
+			paintingInfo.innerHTML = Info11
 			step = 11
 		}
 		else if (currentSrc == "/img/paintings/image12P.png") {
-			paintingName.innerHTML = "Painting12"
+			paintingName.innerHTML = Name12
 			step = 12
 		}
 
@@ -154,11 +182,13 @@ function changeImage(event) {
 		mainImage.width = 1920
 
 		if (currentSrc == "/img/paintings/image27L.png") {
-			paintingName.innerHTML = "Painting13"
+			paintingName.innerHTML = Name13
+			paintingInfo.innerHTML = Info13
 			step = 13
 		}
 		else if (currentSrc == "/img/paintings/image28L.png") {
-			paintingName.innerHTML = "Painting14"
+			paintingName.innerHTML = Name14
+			paintingInfo.innerHTML = Info14
 			step = 14
 		}
 
@@ -186,7 +216,8 @@ function changeImage(event) {
 		}
 
 		mainImage.src = eval("image" + step);
-		paintingName.innerHTML = eval("text" + step);
+		paintingName.innerHTML = eval("Name" + step);
+		paintingInfo.innerHTML = eval("Info" + step);
 
 	}
 	// shows the previos image
@@ -208,7 +239,8 @@ function changeImage(event) {
 		}
 
 		mainImage.src = eval("image" + step);
-		paintingName.innerHTML = eval("text" + step);
+		paintingName.innerHTML = eval("Name" + step);
+		paintingInfo.innerHTML = eval("Info" + step);
 	}
 	// To close the full image preview
 	else {
