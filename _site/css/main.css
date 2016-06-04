@@ -39,6 +39,16 @@
 .arrow-right:hover {
 	opacity: 0.5
 }
+#painting-name {
+	color: white;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#painting-info {
+	text-align: center;
+	color: white;
+}
 .footer-text {
 	color: white; 
 	font-size: 15px;
@@ -53,90 +63,6 @@
 #home-text {
 	font-size: 18px;
 	color: #8C8C8C;
-}
-#image1 {
-	background: url(/img/paintings/image1.jpg) no-repeat;
-	background-position: center;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-}
-#image2 {
-	background: url(/img/paintings/image2.jpg) no-repeat;
-	background-position: center;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-}
-#image3 {
-	background: url(/img/paintings/image3.jpg) no-repeat;
-	background-position: center;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-}
-#image4 {
-	background: url(/img/paintings/image4.jpg) no-repeat;
-	background-position: center;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-}
-#image5 {
-	background: url(/img/paintings/image5.jpg) no-repeat;
-	background-position: center;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-}
-#image6 {
-	background: url(/img/paintings/image6.jpg) no-repeat;
-	background-position: center;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-}
-#image7 {
-	background: url(/img/paintings/image7.jpg) no-repeat;
-	background-position: center;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-}
-#image8 {
-	background: url(/img/paintings/image8.jpg) no-repeat;
-	background-position: center;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-}
-#image9 {
-	background: url(/img/paintings/image9.jpg) no-repeat;
-	background-position: center;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-}
-#image10 {
-	background: url(/img/paintings/image10.jpg) no-repeat;
-	background-position: center;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-}
-#image11 {
-	background: url(/img/paintings/image11.jpg) no-repeat;
-	background-position: center;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-}
-#image12 {
-	background: url(/img/paintings/image12.jpg) no-repeat;
-	background-position: center;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
 }
 @media screen and (max-width: 1366px) { 
 	.arrow-left {
