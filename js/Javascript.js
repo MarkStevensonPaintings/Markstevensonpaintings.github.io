@@ -51,6 +51,9 @@ function changeImage(event) {
 	var image14 = document.getElementById("image14");
 	image14.src = "/img/paintings/image28L.png";
 	image14 = image14.src
+	var image15 = document.getElementById("image15");
+	image15.src = "/img/paintings/image29P.jpg";
+	image15 = image15.src
 
 
 
@@ -68,6 +71,7 @@ function changeImage(event) {
 	var Name12 = "Self Portrait";
 	var Name13 = "Ivor";
 	var Name14 = "Marta";
+	var Name15 = "Self Portrait";
 
 	var Info1 = "Oil on Canvas 45x35cm";
 	var Info2 = "Oil on Canvas 30x25cm";
@@ -83,7 +87,7 @@ function changeImage(event) {
 	var Info12 = "Oil on Board 20x20cm";
 	var Info13 = "Oil on Canvas 40x60cm";
 	var Info14 = "Oil on Canvas 30x25cm";
-
+	var Info15 = "unknown";
 
 
 	//  Checks what is being clicked on
@@ -157,8 +161,15 @@ function changeImage(event) {
 		}
 		else if (currentSrc == "/img/paintings/image12P.png") {
 			paintingName.innerHTML = Name12
+			paintingInfo.innerHTML = Info12
 			step = 12
 		}
+		else if (currentSrc == "/img/paintings/image29P.jpg") {
+			paintingName.innerHTML = Name15
+			paintingInfo.innerHTML = Info15
+			step = 15
+		}
+
 
 		if (currentSrc.includes("L")) {
 			mainImage.height = 1080
@@ -199,7 +210,7 @@ function changeImage(event) {
 
 	// Changes the to the next image
 	else if (targetElement.className == "arrow-right") {
-		if (step >= 14) {
+		if (step >= 15) {
 			step = 0
 		}
 		step++
@@ -209,7 +220,7 @@ function changeImage(event) {
 			mainImage.height = 1080
 			mainImage.width = 1920
 		}
-		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5 || step == 6 || step == 7 || step == 8 || step == 9|| step == 10|| step == 11 || step == 12) {
+		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5 || step == 6 || step == 7 || step == 8 || step == 9|| step == 10|| step == 11 || step == 12 || step == 15) {
 			document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 700
 			mainImage.width = 600
@@ -223,7 +234,7 @@ function changeImage(event) {
 	// shows the previos image
 	else if (targetElement.className == "arrow-left") {
 		if (step <= 1) {
-			step = 15
+			step = 16
 		}
 		step--
 
@@ -232,7 +243,7 @@ function changeImage(event) {
 			mainImage.height = 1080
 			mainImage.width = 1920
 		}
-		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5 || step == 6 || step == 7 || step == 8 || step == 9|| step == 10|| step == 11 || step == 12) {
+		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5 || step == 6 || step == 7 || step == 8 || step == 9|| step == 10|| step == 11 || step == 12 || step == 15) {
 			document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 700
 			mainImage.width = 600
