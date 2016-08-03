@@ -13,7 +13,7 @@
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://markstevensonpaintings.com/contact/">
+  <link rel="canonical" href="http://markstevensonpaintings.com/contact.php">
   <link rel="alternate" type="application/rss+xml" title="Marks Stevenson Paintings" href="http://markstevensonpaintings.com/feed.xml" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -118,15 +118,17 @@
 					I am happy to travel to the sitter’s home or workplace or paint from my studio in Fulham.<br><br>
 				</p>
 
-				<form action="MAILTO:llewellynbh@gmail.com" method="post" enctype="text/plain">
+				<form action="send_contact.php" method="post">
 					<fieldset>
 						<h3>Send Email to Markstevenson</h3><h5>Note: Desktop Email Application required</h5><br>
 
 						<label class="labelone" for="name">Name:</label>
 						<input name="name"/><br><br>
+						<label class="labelone" for="email">email:</label>
+						<input name="email"/><br><br>
 						<label>Text:</label><br>
-						<textarea rows="10" cols="60"></textarea><br><br>
-						<input type="submit" value="send">
+						<textarea name="message" rows="10" cols="60"></textarea><br><br>
+						<input type="submit" value="send"><input type="reset" value="reset">
 					</fieldset>
 				</form>
 

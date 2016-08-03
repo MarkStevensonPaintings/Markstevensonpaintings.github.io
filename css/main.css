@@ -64,6 +64,11 @@
 	font-size: 18px;
 	color: #6C6C6C;
 }
+#Contactpage-image {
+	box-shadow: none;
+	-webkit-box-shadow: 0;
+	border: none;
+}
 @media screen and (max-width: 1360px) { 
 	.arrow-left {
 		width: 20px;

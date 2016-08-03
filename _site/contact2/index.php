@@ -1,8 +1,3 @@
----
-layout: page
-permalink: /contact/
----
-
 <div class="container" style="padding-bottom: 200px;">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
@@ -47,7 +42,7 @@ permalink: /contact/
 						<input name="name"/><br><br>
 						<label>Text:</label><br>
 						<textarea rows="10" cols="60"></textarea><br><br>
-						<input type="submit" value="send">
+						<input type="submit" value="send"><input type="reset" value="reset">
 					</fieldset>
 				</form>
 
