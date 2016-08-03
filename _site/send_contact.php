@@ -1,4 +1,4 @@
-<?php
+{% raw %}<?php
 
 $name ="$name";
 $email ="$email";
@@ -15,3 +15,5 @@ if($send_contact){
 else {
 	echo "Error";
 }
+
+{% endraw %}
