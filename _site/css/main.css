@@ -64,7 +64,7 @@
 	font-size: 18px;
 	color: #6C6C6C;
 }
-@media screen and (max-width: 1366px) { 
+@media screen and (max-width: 1360px) { 
 	.arrow-left {
 		width: 20px;
 		height: 20px; 
@@ -82,9 +82,11 @@
 	#painting-info {
 		font-size: 13px;
 	}
+	.Homepage-image {
+		width: 912px;
+		height: 513;
+	}
 }
-
-
 @media screen and (max-width: 400px) {
 	.navbar-brand {
 		font-size: 20px;
