@@ -54,6 +54,9 @@ function changeImage(event) {
 	var image15 = document.getElementById("image15");
 	image15.src = "/img/paintings/image29P.jpg";
 	image15 = image15.src
+	var image16 = document.getElementById("image16");
+	image16.src = "/img/paintings/image30P.png";
+	image16 = image16.src
 
 
 
@@ -72,6 +75,7 @@ function changeImage(event) {
 	var Name13 = "Ivor";
 	var Name14 = "Marta";
 	var Name15 = "Self Portrait";
+	var Name16 = "Nick Reading";
 
 	var Info1 = "Oil on Canvas 45x35cm";
 	var Info2 = "Oil on Canvas 30x25cm";
@@ -88,6 +92,7 @@ function changeImage(event) {
 	var Info13 = "Oil on Canvas 40x60cm";
 	var Info14 = "Oil on Canvas 30x25cm";
 	var Info15 = "unknown";
+	var Info16 = "unknown";
 
 
 	//  Checks what is being clicked on
@@ -169,6 +174,11 @@ function changeImage(event) {
 			paintingInfo.innerHTML = Info15
 			step = 15
 		}
+		else if (currentSrc == "/img/paintings/image30P.png") {
+			paintingName.innerHTML = Name16
+			paintingInfo.innerHTML = Info16
+			step = 16
+		}
 
 
 		if (currentSrc.includes("L")) {
@@ -210,7 +220,7 @@ function changeImage(event) {
 
 	// Changes the to the next image
 	else if (targetElement.className == "arrow-right") {
-		if (step >= 15) {
+		if (step >= 16) {
 			step = 0
 		}
 		step++
@@ -220,7 +230,7 @@ function changeImage(event) {
 			mainImage.height = 1080
 			mainImage.width = 1920
 		}
-		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5 || step == 6 || step == 7 || step == 8 || step == 9|| step == 10|| step == 11 || step == 12 || step == 15) {
+		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5 || step == 6 || step == 7 || step == 8 || step == 9|| step == 10|| step == 11 || step == 12 || step == 15 || step == 16) {
 			document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 700
 			mainImage.width = 600
@@ -234,7 +244,7 @@ function changeImage(event) {
 	// shows the previos image
 	else if (targetElement.className == "arrow-left") {
 		if (step <= 1) {
-			step = 16
+			step = 17
 		}
 		step--
 
@@ -243,7 +253,7 @@ function changeImage(event) {
 			mainImage.height = 1080
 			mainImage.width = 1920
 		}
-		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5 || step == 6 || step == 7 || step == 8 || step == 9|| step == 10|| step == 11 || step == 12 || step == 15) {
+		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5 || step == 6 || step == 7 || step == 8 || step == 9|| step == 10|| step == 11 || step == 12 || step == 15 || step == 16) {
 			document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 700
 			mainImage.width = 600
