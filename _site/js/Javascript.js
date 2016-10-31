@@ -91,8 +91,8 @@ function changeImage(event) {
 	var Info12 = "Oil on Board 20x20cm";
 	var Info13 = "Oil on Canvas 40x60cm";
 	var Info14 = "Oil on Canvas 30x25cm";
-	var Info15 = "unknown";
-	var Info16 = "unknown";
+	var Info15 = "Oil on Board 20x20cm";
+	var Info16 = "Oil on Canvas 80x80cm";
 
 
 	//  Checks what is being clicked on
