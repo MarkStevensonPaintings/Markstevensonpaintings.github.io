@@ -57,6 +57,9 @@ function changeImage(event) {
 	var image16 = document.getElementById("image16");
 	image16.src = "/img/paintings/image30P.png";
 	image16 = image16.src
+	var image17 = document.getElementById("image17");
+	image17.src = "/img/paintings/image31P.png";
+	image17 = image17.src
 
 
 
@@ -76,6 +79,7 @@ function changeImage(event) {
 	var Name14 = "Marta";
 	var Name15 = "Self Portrait";
 	var Name16 = "Nick Reading";
+	var Name17 = "Rosie";
 
 	var Info1 = "Oil on Canvas 45x35cm";
 	var Info2 = "Oil on Canvas 30x25cm";
@@ -93,6 +97,7 @@ function changeImage(event) {
 	var Info14 = "Oil on Canvas 30x25cm";
 	var Info15 = "Oil on Board 20x20cm";
 	var Info16 = "Oil on Canvas 80x80cm";
+	var Info17 = "Oil on Canvas 60x90cm";
 
 
 	//  Checks what is being clicked on
@@ -179,6 +184,11 @@ function changeImage(event) {
 			paintingInfo.innerHTML = Info16
 			step = 16
 		}
+		else if (currentSrc == "/img/paintings/image31P.png") {
+			paintingName.innerHTML = Name17
+			paintingInfo.innerHTML = Info17
+			step = 17
+		}
 
 
 		if (currentSrc.includes("L")) {
@@ -220,7 +230,7 @@ function changeImage(event) {
 
 	// Changes the to the next image
 	else if (targetElement.className == "arrow-right") {
-		if (step >= 16) {
+		if (step >= 17) {
 			step = 0
 		}
 		step++
@@ -244,7 +254,7 @@ function changeImage(event) {
 	// shows the previos image
 	else if (targetElement.className == "arrow-left") {
 		if (step <= 1) {
-			step = 17
+			step = 18
 		}
 		step--
 
@@ -253,7 +263,7 @@ function changeImage(event) {
 			mainImage.height = 1080
 			mainImage.width = 1920
 		}
-		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5 || step == 6 || step == 7 || step == 8 || step == 9|| step == 10|| step == 11 || step == 12 || step == 15 || step == 16) {
+		if (step == 1 || step == 2 || step == 3 || step == 4 || step == 5 || step == 6 || step == 7 || step == 8 || step == 9|| step == 10|| step == 11 || step == 12 || step == 15 || step == 16 || step == 17) {
 			document.getElementById("container-size").className = "col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-offset-1 col-xs-10";
 			mainImage.height = 700
 			mainImage.width = 600
